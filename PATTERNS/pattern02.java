@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class pattern02 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+        int sp = n-1;
+        int st = 1;
+
+        for(int i=0;i<n;i++){
+            for(int j=1;j<=sp;j++){
+                    System.out.print("\t");
+                }
+                for(int k=1;k<=st;k++){
+                    System.out.print("*\t");
+                }
+                sp--;
+                st++;
+                System.out.println();
+        }
+        
+
+    }
+}
+
+//                                 *
+//                         *       *
+//                 *       *       *
+//         *       *       *       *
+// *       *       *       *       *
